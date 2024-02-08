@@ -1,0 +1,17 @@
+Backend Development DOCS
+
+
+Major Components of backend
+	1. Programming Language
+	2. A Database like mongodb
+
+1. Directory Structure
+	1.src
+	  1. App.js ->  TO contain basic backend connection like connecting database and basic methods like app.use()
+	  2. DB -> Use to store database connections code
+          3. Models -> This folder is used to contain Database Models and Schema
+	  4. Controllers -> This folder is used to declare the function used in backend.All the functions and methods is stored in 	   			    controllers.
+	  5. Routes -> Used to create routes like login, signup etc.
+	  6. Utils -> Used to store common features which can be used multiple times.
+
+2. To Relate Models in Mongo DB (mongoose)
