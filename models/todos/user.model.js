@@ -4,7 +4,7 @@ const userSchema = new mongoose.Schema({
     username: {
         type: String,
         // If the field is required
-        require: true,
+        required: true,
         // Get unique data for unique data
         unique: true,
         // Lowercase data
@@ -12,13 +12,13 @@ const userSchema = new mongoose.Schema({
     },
     email: {
         type: String,
-        require: ["true", "Email required and must be unique"],
+        required: ["true", "Email required and must be unique"],
         unique: true,
         lowercase: true
     },
     password: {
         type: String,
-        require: true,
+        required: true,
     }
 }, {timestamps: true})
 

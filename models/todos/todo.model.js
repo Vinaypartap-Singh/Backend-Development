@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const todoSchema = new mongoose.Schema({
     content: {
         type: String,
-        require: true,
+        required: true,
     },
     complete: {
         type: Boolean,
@@ -13,7 +13,14 @@ const todoSchema = new mongoose.Schema({
     createdBy: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User"
-    }
+    },
+    // Define Subtodo's
+    subTodos: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "SubTodo"
+        }
+    ]
 }, {timestamps: true});
 
 export const Todo = mongoose.model("Todo", todoSchema)
