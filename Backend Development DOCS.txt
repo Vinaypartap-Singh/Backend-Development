@@ -15,3 +15,4 @@ Major Components of backend
 	  6. Utils -> Used to store common features which can be used multiple times.
 
 2. To Relate Models in Mongo DB (mongoose)
+
